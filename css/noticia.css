@@ -1,0 +1,132 @@
+:root {
+    --cor1: #778DA9;
+    --cor2: #415A77;
+    --cor3: #1B263B;
+    --cor4: #0D1B2A;
+    --cor5: #EF233C;
+    --cor6: #D90429;
+}
+
+/* imagem e titulo da notícia */
+.img-noticia {
+    position: relative;
+    margin: 15px 0;
+
+    width: 100%;
+    height: 70vh;
+}
+
+/* título e subtítulo da notícia */
+.img-noticia .titulo-noticia {
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+/* título */
+.img-noticia .titulo-noticia h1 {
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    max-width: 900px;
+}
+
+/* subtítulo */
+.img-noticia .titulo-noticia h3 {
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-top: 20px;
+    max-width: 900px;
+}
+
+.container .texto-noticia .nome-autor {
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: .8em;
+}
+.container .texto-noticia .nome-autor p:last-of-type {
+    font-weight: 600;
+    color: var(--cor6);
+}
+
+/* conteúdo da notícia, o conteúdo em si */
+.container .texto-noticia {
+    padding: 20px 0;
+    text-align: justify;
+    color: #444;
+    font-size: 1.2em;
+}
+
+.container .voltar a {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--cor5);
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+.container .voltar a:hover {
+    background-color: var(--cor6);
+}
+
+
+/* --------------- responsivo do site --------------- */
+@media screen and (max-width: 970px){
+    .img-noticia .titulo-noticia h1{
+        font-size: 2.5em;
+        max-width: 700px;
+    }
+    .img-noticia .titulo-noticia h3 {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .img-noticia .titulo-noticia h1{
+        font-size: 2.5em;
+        max-width: 500px;
+    }
+    .img-noticia .titulo-noticia h3 {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 560px){
+
+    .img-noticia .titulo-noticia {
+        text-align: center;
+    }
+
+    .img-noticia .titulo-noticia h1{
+        font-size: 2em;
+        max-width: 300px;
+    }
+    .img-noticia .titulo-noticia h3 {
+        max-width: 300px;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .img-noticia .titulo-noticia {
+        padding: 0 12px;
+        text-align: center;
+    }
+
+    .img-noticia .titulo-noticia h1{
+        font-size: 1.4em;
+        width: 100%;
+    }
+    .img-noticia .titulo-noticia h3 {
+        font-size: .9em;
+        width: 100%;
+    }
+}
